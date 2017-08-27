@@ -1,40 +1,25 @@
 
 #! /bin/bash
 
-REPOS="ssb-avatar
-ssb-blobs
-ssb-client
-ssb-config
-ssb-ebt
-ssb-feed
-ssb-friends
-ssb-generate
-ssb-irc
-ssb-keys
-ssb-links
-ssb-mentions
-ssb-msg-schemas
-ssb-msgs
-ssb-names
-ssb-query
-ssb-reduce
-ssb-reduce-stream
-ssb-ref
-ssb-search
-ssb-secret-blob
-ssb-sort
-ssb-status
-ssb-thread
-ssb-viewer
-ssb-ws
-scuttlebot
-secure-scuttlebutt
-multiserver
-multiblob
-muxrpc
-packet-stream
+REPOS="
+flumedb
+flume-bench
+flumecli
+flumecodec
+flumelog-idb
+flumelog-level
+flumelog-memory
+flumelog-offset
+flumeview-bloom
+flumeview-hashtable
+flumeview-idb
+flumeview-level
+flumeview-query
+flumeview-reduce
+test-flumelog
+test-flumeview-index
 "
-AUTHORS="dominictarr mixmix cel ahdinosaur mmckegg evbogue staltz marak"
+AUTHORS="dominictarr regular"
 
 for R in $REPOS; do
   OWNERS=$(npm owner ls $R | awk '{print $1}')
@@ -49,5 +34,13 @@ for R in $REPOS; do
     fi
   done
 done
+
+
+
+
+
+
+
+
 
 
