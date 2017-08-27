@@ -1,4 +1,4 @@
-# ssbc-owners
+# flume-owners
 
 this is a script to easily add everyone to all repos.
 if you are npm owner for the modules in the list,
