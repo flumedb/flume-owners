@@ -16,10 +16,17 @@ flumeview-idb
 flumeview-level
 flumeview-query
 flumeview-reduce
+flumeview-search
+flumeview-keyvalue
+flume-kv
+flume-example
 test-flumelog
 test-flumeview-index
+bench-flumelog
+aligned-block-file
+append-batch
 "
-AUTHORS="dominictarr regular"
+AUTHORS="dominictarr regular arj03"
 
 for R in $REPOS; do
   OWNERS=$(npm owner ls $R | awk '{print $1}')
@@ -34,6 +41,7 @@ for R in $REPOS; do
     fi
   done
 done
+
 
 
 
